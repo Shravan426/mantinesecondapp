@@ -4,7 +4,7 @@ import Component115 from "./images/Component 115 – 1.png"
 function Header() {
     const { classes } = useStyles();
     return (
-        <Box maw={'100%'} mx="auto" bg={'white'}>
+        <Box className={classes.head} maw={'100%'} mx="auto">
             <Grid justify="space-around">
                 <Grid.Col span={3} xs={12} sm={6} md={4} lg={3}>
                     <Image src={Component115} w={'100%'}/>
