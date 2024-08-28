@@ -37,9 +37,5 @@ arrow:{
     opacity: '1',
 },
 
-clear:{
-    backgroundColor:'#002D74',
-    opacity:'21%',
-}
 }));
 export default useStyles;
