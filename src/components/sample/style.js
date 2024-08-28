@@ -14,6 +14,32 @@ head:{
 
 Group:{
     height:'900px'
+},
+
+search:{
+    borderradius: '24px',
+    opacity:'1',
+},
+
+oneform:{
+    borderradius: "21px",
+    opacity: '1',
+},
+
+planeup:{
+    height:'1mm',
+    width:'1mm',
+},
+
+arrow:{
+    background: '#FFFFFF',
+    boxshadow: '0px 0px 12px #00000029',
+    opacity: '1',
+},
+
+clear:{
+    backgroundColor:'#002D74',
+    opacity:'21%',
 }
 }));
 export default useStyles;
