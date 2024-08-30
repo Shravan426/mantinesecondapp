@@ -1,4 +1,4 @@
-import {Tabs, Text,Flex,TextInput,Box,Select,Image, Card,Button,CloseButton,Grid,Title ,Container } from '@mantine/core';
+import {Tabs, Text,Flex,TextInput,Box,Select,Image, Card,Button,CloseButton,Grid,Title ,Container, MultiSelect } from '@mantine/core';
 import useStyles from './style';
 function Firstpage() {
     const { classes } = useStyles();
@@ -9,21 +9,23 @@ function Firstpage() {
                     <Title order={3} mt={10}>Recent Searches</Title>
                 </Grid.Col>
                 <Grid.Col span={7} display={'flex'} mt={10}>
-                    <Text bg={'#F5F5F6'} ml={10} w={300} display={'flex'} h={30} >Lorem <span><Text ml={5}>ipsum</Text></span><span><CloseButton title="Close popover" size="md" iconSize={20} /></span></Text>
-                    <Text bg={'#F5F5F6'} ml={10} w={300} display={'flex'} h={30} >Lorem <span><Text ml={5}>ipsum</Text></span><span><CloseButton title="Close popover" size="md" iconSize={20} /></span></Text>
-                    <Text bg={'#F5F5F6'} ml={10} w={300} display={'flex'} h={30} >Lorem <span><Text ml={5}>ipsum</Text></span><span><CloseButton title="Close popover" size="md" iconSize={20} /></span></Text>
-                    <Text bg={'#F5F5F6'} ml={10} w={200} display={'flex'} h={30} >Lorem <span><Text ml={5}>ipsum</Text></span><span><CloseButton title="Close popover" size="md" iconSize={20} /></span></Text>
-                    <Text bg={'#F5F5F6'} ml={10} w={200} display={'flex'} h={30} >Lorem <span><Text ml={5}>ipsum</Text></span><span><CloseButton title="Close popover" size="md" iconSize={20} /></span></Text>
-                    <Text bg={'#F5F5F6'} ml={10} w={200} display={'flex'} h={30} >Lorem <span><Text ml={5}>ipsum</Text></span><span><CloseButton title="Close popover" size="md" iconSize={20} /></span></Text>
-                    <Text bg={'#F5F5F6'} ml={10} w={200} display={'flex'} h={30} >Lorem <span><Text ml={5}>ipsum</Text></span><span><CloseButton title="Close popover" size="md" iconSize={20} /></span></Text>
+
+                    <MultiSelect 
+                     classNames={{
+                        wrapper: classes.wrapper,
+                         
+                      }}
+                        data={['Lorem ipsum1', 'Lorem ipsum2', 'Lorem ipsum3', 'Lorem ipsum4', 'Lorem ipsum5', 'Lorem ipsum6', 'Lorem ipsum7','Lorem ipsum8','Lorem ipsum9']}
+                        defaultValue={['Lorem ipsum1']}
+                        clearButtonProps={{ 'aria-label': 'Clear selection' }}
+                        clearable
+                        variant='unstyled'
+                        
+                    />
 
                 </Grid.Col>
             </Grid>
-            <Container display={'flex'} ml={505} mt={40}>
-                <Text bg={'#F5F5F6'} w={120} display={'flex'} h={30} pt={5}>Lorem ipsum<span><CloseButton title="Close popover" size="md" iconSize={20} /></span></Text>
-                <Text bg={'#F5F5F6'} ml={10} w={120} display={'flex'} h={30} pt={5}>Lorem ipsum<span><CloseButton title="Close popover" size="md" iconSize={20} /></span></Text>
-                <Text ml={30} w={120} h={30} c={'#002D74'}>Clear All</Text>
-            </Container>
+ 
             
         </Box>
     )
