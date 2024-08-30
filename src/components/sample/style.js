@@ -37,5 +37,34 @@ arrow:{
     opacity: '1',
 },
 
+card1:{
+    border: '1px dashed #002D74',
+    borderradius: '17px',
+    opacity: '1',
+},
+fours:{
+    display:'flex',
+},
+
+wrapper:{
+     width:'700px',
+
+},
+
+radius:{
+     backdropFilter: 'blur(30px)'
+},
+
+lor:{
+    marginLeft:-30,
+},
+
+lory:{
+    marginLeft:-150,
+},
+
+Bread:{
+    marginLeft:-150,
+}
 }));
 export default useStyles;
